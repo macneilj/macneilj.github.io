@@ -6,18 +6,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joseph MacNeil Portfolio</title>
     <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="assets/build/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   </head>
 <body>
-	<div class="grid-container">
-		<div class="grid-x grid-padding-x">
-			<div class="small-12 cell">
-				<h1>Joseph MacNeil</h1>
-				<p>Portfolio</p>
+	<header>
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="small-12 cell">
+					<h1>Joseph MacNeil</h1>
+					<h4>Web + Wordpress Developer</h4>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="content">
+		<div class="grid-container">
+			<div class="grid-x grid-padding-x">
+				<div class="cell">
+					<ul class="tabs" data-tabs id="portfolio-tabs">
+					  <li class="tabs-title is-active"><a href="#panel1">Northern Patio</a></li>
+					  <li class="tabs-title"><a href="#panel2">Just Direct Promotions</a></li>
+					  <li class="tabs-title"><a href="#panel3">Haldimand County Tourism</a></li>
+					  <li class="tabs-title"><a href="#panel4">Alpa Stairs</a></li>
+					  <li class="tabs-title"><a href="#panel5">RV Hotline</a></li>
+					</ul>
+
+					<div class="tabs-content" data-tabs-content="portfolio-tabs">
+					  <div class="tabs-panel is-active" id="panel1">
+					    <div class="grid-x grid-padding-x">
+					    	<div class="small-12 medium-7 cell">
+					    		<img src="assets/img/np_home.jpg" alt="">
+					    	</div>
+					    	<div class="small-12 medium-5 cell">
+					    		<h3>Northern Patio</h3>
+					    		<h4>Fabric Selector + Cushion Builder</h4>
+
+					    		<h5>Key Features</h5>
+					    		<ul>
+					    			<li>jQuery Driven Fabric Selector</li>
+					    			<li>Large Database of Fabrics (Wordpress Custom Post Type)</li>
+					    			<li>Live Price Calculation in PHP via AJAX</li>
+					    			<li>Woocommerce E-Commerce Platform</li>
+					    			<li><label>Developed at <a href="https://futureaccess.ca">Future Access</a></label></li>
+					    		</ul>
+					    	</div>
+					    </div>
+					    <div class="grid-x grid-padding-x">
+					    	<div class="small-12 medium-6 cell align-self-middle">
+					    		<h4>Fabric Selector</h4>
+					    		<p>Filterable through a live selection of fabrics, manageable by the client via Wordpress</p>
+					    	</div>
+					    	<div class="small-12 medium-6 cell">
+					    		<img src="assets/img/np_fabric_selector.gif">
+					    	</div>
+					    	<div class="small-12 medium-6 cell">
+					    		<img src="assets/img/np_cushion_builder.gif">
+					    	</div>
+					    	<div class="small-12 medium-6 cell align-self-middle">
+					    		<h4>Cushion Builder</h4> 
+					    		<p>Live price calculation for product using AJAX + PHP. Price is influenced by fabric price and cushion sizing options.</p>
+					    	</div>
+
+					    </div>
+					  </div>
+					  <div class="tabs-panel" id="panel2">
+					  	<div class="grid-x grid-padding-x">
+						  	<div class="small-12 medium-7 cell">
+						  		<img src="assets/img/jdp.jpg" alt="">
+						  	</div>
+						  	<div class="small-12 medium-5 cell">
+						  		<h3>Just Direct Promotions</h3>
+						  		<h4>Live Price Calculation + Bulk Pricing</h4>
+
+						  		<h5>Key Features</h5>
+						  		<ul>
+						  			<li>jQuery -> AJAX/PHP driven price calculation</li>
+						  			<li>Large Scale E-Commerce Website</li>
+						  			<li>Woocommerce E-Commerce Platform</li>
+						  			<li><label>Developed at <a href="https://futureaccess.ca">Future Access</a></label></li>
+						  		</ul>
+						  	</div>	
+					  	</div>
+					  	<div class="grid-x grid-padding-x">
+					  		<div class="small-12 medium-6 cell align-self-middle">
+					  			<h4>Bulk Sizing Selector</h4>
+					  			<p>Choose a range of sizes for an apparel-type product. Price is calculated live based on tiers.</p>
+					  		</div>
+					  		<div class="small-12 medium-6 cell">
+					  			<img src="assets/img/jdp_bulk.gif">
+					  			<img src="assets/img/jdp_cart.jpg" alt="">
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="tabs-panel" id="panel3">
+					    <div class="grid-x grid-padding-x">
+					    	<div class="small-12 medium-7 cell">
+					    		<img src="assets/img/haldimand.jpg" alt="">
+					    	</div>
+					    	<div class="small-12 medium-5 cell">
+					    		<h3>Haldimand County Tourism</h3>
+					    		<h4>SASS-Built Theme and User Submissions</h4>
+
+					    		<h5>Key Features</h5>
+					    		<ul>
+					    			<li>Theme built using SASS</li>
+					    			<li>Vendors Can Submit Listings That Create Wordpress Custom Posts</li>
+					    			<li><label>Developed at <a href="https://futureaccess.ca">Future Access</a></label></li>
+					    		</ul>
+					    	</div>
+					    </div>
+					    <div class="grid-x grid-padding-x">
+					    	<div class="small-12 medium-6 cell align-self-middle">
+					    		<h4>Vendor Submissions</h4>
+					    		<p>Users submit a form, which then hooks into Wordpress to create a post, displayed on the front-end after admin approval.</p>
+					    	</div>
+					    	<div class="small-12 medium-6 cell">
+					    		<img src="assets/img/haldimand_vendor_form.jpg">
+					    	</div>
+					    </div>
+					  </div>
+					  <div class="tabs-panel" id="panel4">
+					   <div class="grid-x grid-padding-x">
+					   	<div class="small-12 medium-7 cell">
+					   		<img src="assets/img/alpastairs.jpg" alt="">
+					   	</div>
+					   	<div class="small-12 medium-5 cell">
+					   		<h3>Alpa Stairs</h3>
+					   		<h4>Large E-Commerce Site</h4>
+
+					   		<h5>Key Features</h5>
+					   		<ul>
+					   			<li>Large database of products</li>
+					   			<li>Combination of plugins and custom code</li>
+					   			<li>Built with Woocommerce</li>
+					   			<li><label>Developed at <a href="https://futureaccess.ca/">Future Access</a></label></li>
+					   		</ul>
+					   	</div>
+					   </div>
+					   <div class="grid-x grid-padding-x">
+					   	<div class="small-12 medium-6 cell align-self-middle">
+					   		<h4>Highly Customizable Product Variations</h4>
+					   		<p>Plugins and PHP code influence product price calculation.</p>
+					   	</div>
+					   	<div class="small-12 medium-6 cell">
+					   		<img src="assets/img/alpastairs_product.jpg" alt="">
+					   	</div>
+					   </div>
+					  </div>
+					  <div class="tabs-panel" id="panel5">
+					    <div class="grid-x grid-padding-x">
+					    	<div class="small-12 medium-7 cell">
+					    		<img src="assets/img/rvhotline.jpg" alt="">
+					    	</div>
+					    	<div class="small-12 medium-5 cell">
+					    		<h3>RV Hotline</h3>
+					    		<h4>Database driven listing website</h4>
+
+					    		<h5>Key Features</h5>
+					    		<ul>
+					    			<li>PHP driven website that pulls from custom database</li>
+					    			<li><label><a href="https://www.synergyprosolutions.com/">SynergyPro Solutions</a></label></li>
+					    		</ul>					    		
+					    	</div>
+					    </div>
+					    <div class="grid-x grid-padding-x">
+					    	<div class="small-12 medium-6 cell align-self-middle">
+					    		<h4>Dynamic Listings</h4>
+					    		<p>Displaying listing data via PHP from large custom database structure</p>
+					    	</div>
+					    	<div class="small-12 medium-6 cell">
+					    		<img src="assets/img/rvhotline_listing.jpg" alt="">
+					    	</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </body>
 <script src="assets/js/vendor.js"></script>
 <script src="assets/js/foundation.js"></script>
+<script>
+	console.log($(document).foundation());
+</script>
 </body>
 </html>
